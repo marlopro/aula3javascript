@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do circulo</title>
+</head>
+<body>
+    <form action="">
+        Digite o valor do raio do circulo: <br/>
+        <input type="number" id="raio"/>
+        <br/><br/>
+        <button type="button" onclick="calcular()">Calcular Área</button>
+    </form>
+    <div id="resposta"></div> 
+    
+    <script>
+        function calcular() {
+            //obter valor do raio
+            var raioj = document.getElementById("raio").value;
+            raioj = parseFloat(raioj);
+
+            //calcular area e perimetro
+            var pi = Math.PI;
+            var areac = pi * Math.pow(raioj, 2);
+            var perimetroc = 2 * pi * raioj;
+
+            //saida -->
+
+            document.getElementById("resposta").innerHTML =
+                'A área do círculo é: ' + areac.toFixed(2) +
+                '<br> O perímetro do círculo é : ' + perimetroc.toFixed(2); 
+        }
+        
+        
+        //entrada
+        //let raio = parseFloat(prompt("Digite o valor do raio: "));
+        
+        //processamento
+        //let areac = Math.PI * Math.pow(raio, 2);
+
+        //saida
+        //document.writeln('A área do círculo é: ' + areac.toFixed(2));
+    </script>
+</body>
+</html>

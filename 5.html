@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área e Perímetro do Círculo</title>
+</head>
+<body>
+
+    <script>
+        //entrada
+        let raio = parseFloat(prompt("Digite o valor do raio: "));
+        
+        //processamento
+        //let areac = 3.14 * (raio * raio);
+        let areac = Math.PI * Math.pow(raio, 2);
+        let perimetroc = 2 * Math.PI * raio;
+
+
+        //saida
+        document.writeln('A área do círculo é: ' + areac.toFixed(0) + '  O perímetro do círculo é : ' + perimetroc.toFixed(0));
+        
+        //alert('Area do circulo é: ' + areac.toFixed(2) + '\nO perimetro do circulo é : ' + perimetroc.toFixed(2));
+
+        //document.writeln("<br> Valor da área do círculo " + areac);
+        //document.writeln("<br> Arredonda para cima " + Math.ceil(areac));
+        //document.writeln("<br> Arredonda para baixo " + Math.floor(areac));
+        //document.writeln("<br> fixa em casa decimal " + areac.toFixed(2));
+
+    </script>
+    
+</body>
+</html>
